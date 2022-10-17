@@ -1,0 +1,23 @@
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Price</th>
+      <th scope="col">thumbnail</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#if productos.length}}
+        {{#each productos}}
+    <tr>
+      <td>{{this.title}}</td>
+      <td>{{this.price}}</td>
+      <td><img height="30px" width="30px" src={{this.thumbnail}} /></td>
+    </tr>
+     {{/each}}
+    {{/if}}
+ 
+  </tbody>
+</table>
+<a href="/"><button class="btn btn-primary btn-block mt-3">Volver al formulario de carga</button></a>

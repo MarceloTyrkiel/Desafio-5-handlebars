@@ -1,0 +1,45 @@
+
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+    <div class="card bg-light">
+      <div class="card-body">
+        <form action="/productos" method="POST">
+          <div class="mb-3">
+            <input
+              type="text"
+              name="title"
+              placeholder="Escribi un titulo"
+              class="form-control"
+              autofocus
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="number"
+              name="price"
+              placeholder="Precio"
+              class="form-control"
+              autofocus
+            />
+          </div>
+          <div class="mb-3">
+            <label for="thumbnail">Titulo:</label>
+            <input
+              type="text"
+              name="thumbnail"
+              placeholder="Thumbnail"
+              class="form-control"
+              autofocus
+            />
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block">
+             Enviar
+          </button>
+          
+        </form>
+         <a href="/productos"><button class="btn btn-primary btn-block mt-3" >Ir a productos</button></a>
+      </div>
+    </div>
+  </div>
+</div>
